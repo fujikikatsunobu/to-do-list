@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+</head>
+<body>
+  <main>
+    <h1>To Do App</h1>
+    <div class="container-fluid">
+      <div class="row">
+        <div id="js-taskforms" class="col-sm-9">
+        <!--jsファイルで操作する内容
+          <div id="js-taskformFlex" class="excution">
+            <div id="js-listItems"> 変数：listItems
+              <div>【タスク内容】：${tasks}</div>変数：listItem
+              <form>【優先度】：${taskLevel}`;// 【期限】：${LimitTime}</form>変数：taskLevelLimit
+            </div>
+            <div id="js-inputForm">InputForm
+              <input class="" type="checkbox" name="完了" value="完了">変数：taskFnishcheck
+              <button class="btn btn-primary">編集</button>変数：taskEditButton
+              <button class="btn btn-secondary">削除</button>変数：taskDeletetButton
+            </div>
+          </div>-->
+
+          <section class="row inputDate">
+            <div class="col-lg-5 col-sm-12 inputDate-task">
+              タスク内容<span>※必須</span>
+              <form id="text-form" action="" name="textform">
+                <input id="task" class="inputDate-info" type="text" placeholder="タスクを入力してください">
+              </form>
+            </div>
+            <div class="col-lg-5 col-sm-8 inputDate-middle">
+              <div class="col-sm-5 inputDate-level">
+                優先度<span>※必須</span>
+                <div>
+                  <form action="" method="POST" id="task-level" name="levelform">
+                    <label for="high">
+                      <input id="high" class="inputDate-level-info" type="radio" name="level" value="高" checked>高
+                    </label>
+                    <label for="middle">
+                      <input id="middle" class="inputDate-level-info" type="radio" name="level" value="中">中
+                    </label>
+                    <label for="low">
+                      <input id="low" class="inputDate-level-info" type="radio" name="level" value="低">低
+                    </label>
+                  </form>
+                </div>
+              </div>
+              <div class="col-sm-5 inputDate-date">
+                期限
+                <form action="" name="dateform">
+                  <input id="today" class="inputDate-date-today" type="date" name="today">
+                </form>
+              </div>
+            </div>
+            <div class="col-lg-2 col-sm-4 inputDate-button">
+              <button id="add" class="btn btn-success inputDate-button-type">追加</button>
+              <button id="reset" class="btn btn-primary ">リセット</button>
+            </div>
+          </section>
+
+        </div>
+        <div class="col-sm-3">
+          <section class="inputInfo">
+            <table class="inputInfo-table">
+              <tr>
+                <td>現在のタスク数</td>
+                <td id="taskItem"></td>
+              </tr>
+              <tr>
+                <td>残りのタスク数</td>
+                <td>０個</td>
+              </tr>
+              <tr>
+                <td>完了のタスク数</td>
+                <td>０個</td>
+              </tr>
+              <tr>
+                <td>タスクの完了率</td>
+                <td>０%</td>
+              </tr>
+            </table>
+          </section>
+
+          <section class="taskOrder">
+            タスクの並び替え
+            <!-- <form action="" class="taskOrder-btn">
+              <input type="button" value="優先度順">
+              <input type="button" value="期限順">
+            </form> -->
+            <div class="taskOrder-btns">
+              <button class="taskOrder-btn yuusenn"> 優先度順</button>
+              <button class="taskOrder-btn kigen">期限順</button>
+            </div>
+          </section>
+
+          <section class="taskDelete">
+            <button class="taskDelete-btn">全タスク削除</button>
+          </section>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script src="index.js"></script>
+</body>
+</html>

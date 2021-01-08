@@ -1,0 +1,155 @@
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+main {
+  width: 95%;
+  margin: 0 auto;
+  background-color: cornsilk;
+}
+
+h1 {
+  font-size: 56px;
+  font-weight: 600;
+}
+
+.excution {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  background-color: darkgray;
+  border-radius: 5px;
+  width: 100%;
+  padding: 20px;
+  margin-left: -14px;
+  margin-bottom: 10px;
+}
+
+.taskContents {
+  display: flex;
+  justify-content: space-between;
+}
+
+div+section {
+  margin-top: 10px;
+}
+
+.inputDate {
+  background-color: bisque;
+  border-radius: 5px;
+  width: 100%;
+  line-height: 30px;
+  padding: 5px;
+}
+
+.inputDate-task>span,
+.inputDate-level>span {
+  color: rgb(255, 0, 0);
+  font-size: 0.8em;
+}
+
+.inputDate-info {
+  display: block;
+  width: 100%;
+}
+
+label+label {
+  margin-left: 0.8em;
+}
+
+.inputDate-middle {
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.inputDate-button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.inputDate-button-type {
+  margin-right: 10px;
+  width: auto;
+}
+
+.inputInfo-table {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+tr td {
+  border: rgb(194, 194, 194) solid 1px;
+  height: 40px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.taskOrder {
+  width: 100%;
+}
+
+.taskOrder-btns {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.taskOrder-btn {
+  background-color: rgba(255, 255, 255, 0);
+  border: rgb(194, 194, 194) solid 1px;
+  height: 40px;
+  width: 50%;
+  border-radius: 5px;
+  color: rgb(133, 133, 133);
+}
+
+.taskOrder-btn:hover {
+  color: #fff;
+  background-color: rgb(194, 194, 194);
+}
+
+.yuusenn {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-right: none;
+}
+
+.kigen {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.taskDelete-btn {
+  background-color: rgba(255, 255, 255, 0);
+  border: rgb(255, 0, 0) solid 1px;
+  height: 40px;
+  width: 100%;
+  border-radius: 5px;
+  color: rgb(255, 0, 0);
+}
+
+.taskDelete-btn:hover {
+  background-color: rgb(255, 0, 0);
+  color: #fff;
+}
